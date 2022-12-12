@@ -18,6 +18,8 @@
         AND password = '$password' 
         ";
 
+
+
         
 ?>
 <!DOCTYPE html>
@@ -61,12 +63,14 @@
          <br><br>
          <?php
 
+      
         if($rsLogin = mysqli_query($con, $strSql)){
             if(mysqli_num_rows($rsLogin) > 0){
-                echo 'Welcome to the System';
+               header('location: Mainui.php');
             mysqli_free_result($rsLogin);
                 } 
             }
+    
             else
             echo 'Invalid Username/Password';
         }
