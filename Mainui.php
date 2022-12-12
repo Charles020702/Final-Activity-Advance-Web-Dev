@@ -16,9 +16,10 @@
     <title>Learning IT Easy Online Shop|Products</title>
 </head>
 <body>
+    
     <div class="container">
         <div class="row mt-5">
-            <div class="col-10">
+            <div class="col-10">   
                 <h1><i class="fa fa-store"></i> Learn IT Easy Online Shop</h1>
             </div>
             <div class="col-2 text-right">
@@ -31,7 +32,6 @@
             </div>            
         </div>
         <hr>
-
         <div class="row">
             <?php if(isset($arrProducts)): ?>
                 <?php foreach($arrProducts as $key => $product): ?>
